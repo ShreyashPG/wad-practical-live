@@ -3,228 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Website</title>
-    <link href="Bootstrap/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Pune Institute of Computer Technology</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .topper-card {
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+        }
+        .topper-card:hover {
+            transform: translateY(-5px);
+        }
+        .topper-img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .navbar {
+            border-bottom: 3px solid #002147;
+        }
+        footer {
+            background-color: #002147;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-   
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="PICT.jpg" width="50" height="50" class="d-inline-block align-top" alt="Bootstrap" >
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="#">PICT</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Student Desk
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Admissions</a></li>
-                  <li><a class="dropdown-item" href="#">Scholarships</a></li>
-                  <li><a class="dropdown-item" href="#">Student Life</a></li>
+        </button>
+        <div class=" collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Our Achievements</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Year-Wise Toppers</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
+<!-- Main Content -->
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Welcome to Pune Institute of Computer Technology</h1>
+    
+    <!-- Toppers Section -->
+    <h2 class="text-center mb-4">Year-Wise Toppers</h2>
+    <div class="row">
+        <!-- Topper Card 2023 -->
+        <div class="col-md-4 col-sm-6 col-12">
+            <div class="card h-100 topper-card">
+                <img src="student3.jpg" class="card-img-top topper-img" alt="Topper 2023">
+                <div class="card-body">
+                    <h5 class="card-title">2023 Batch Topper</h5>
+                    <p class="card-text">
+                        <strong>Name:</strong> Rohan Sharma<br>
+                        <strong>Department:</strong> Computer Engineering<br>
+                        <strong>Percentage:</strong> 98.4%
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Topper Card 2022 -->
+        <div class="col-md-4 col-sm-6 col-12">
+            <div class="card h-100 topper-card">
+                <img src="student4.jpg" class="card-img-top topper-img" alt="Topper 2022">
+                <div class="card-body">
+                    <h5 class="card-title">2022 Batch Topper</h5>
+                    <p class="card-text">
+                        <strong>Name:</strong> Anjali Patil<br>
+                        <strong>Department:</strong> IT Engineering<br>
+                        <strong>Percentage:</strong> 97.8%
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Topper Card 2021 -->
+        <div class="col-md-4 col-sm-6 col-12">
+            <div class="card h-100 topper-card">
+                <img src="Student1.jpg" class="card-img-top topper-img" alt="Topper 2021">
+                <div class="card-body">
+                    <h5 class="card-title">2021 Batch Topper</h5>
+                    <p class="card-text">
+                        <strong>Name:</strong> Amit Joshi<br>
+                        <strong>Department:</strong> E&TC Engineering<br>
+                        <strong>Percentage:</strong> 96.9%
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="mt-5 py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <p>
+                    Dhankawadi, Pune<br>
+                    Maharashtra 411043<br>
+                    Phone: +91 20 2437 0401
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Admissions</a></li>
+                    <li><a href="#" class="text-white">Academics</a></li>
+                    <li><a href="#" class="text-white">Placements</a></li>
                 </ul>
-              </li>
-     
-            </ul>
-   
-          </div>
-        </div>
-      </nav>
-
-      <div class="bd-example-snippet bd-code-snippet">
-        <div class="bd-example m-0 border-0">
-                <center> <p class="display-2">Pune Institute of Computer Technology</p></center>
-        </div>
-      </div>
-      <br>
-
-      <div class="bd-example-snippet bd-code-snippet">
-        <div class="bd-example m-0 border-0">
-                <center> <p class="display-3">Year Wise Results</p></center>
-        </div>
-      </div>
-      <br>
-      
- 
-      <div class="bd-example-snippet bd-code-snippet">
-        <div class="bd-example m-0 border-0">
-                <center> <p class="display-5">2023 Toppers</p></center>
-        </div>
-      </div>
-     
-      <div class = "row">
-        <div class="col">
-          <div class="card">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="160" src="Student1.jpg" focusable="false">
-            <div class="card-body">
-              <h5 class="card-title">Thomas Fame</h5>
-              <p class="card-text">Score : 100%</p>
-              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="160" src="Student1.jpg" focusable="false">
-            <div class="card-body">
-              <h5 class="card-title">John Smith</h5>
-              <p class="card-text">Score : 99.9%</p>
-              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <div class="social-links">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="col">
-            <div class="card">
-              <img class="bd-placeholder-img card-img-top" width="100%" height="160" src="student3.jpg" focusable="false">
-              <div class="card-body">
-                <h5 class="card-title">Jake Fury</h5>
-                <p class="card-text">Score : 98.9%</p>
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-              </div>
-            </div>
-          </div>
-      </div>
-
-      <br>
-      <br>
-
-
-      <div class="bd-example-snippet bd-code-snippet">
-        <div class="bd-example m-0 border-0">
-                <center> <p class="display-5">2024 Toppers</p></center>
+        <div class="text-center mt-3">
+            <p>&copy; 2023 Pune Institute of Computer Technology. All rights reserved.</p>
         </div>
-      </div>
-     
-      <div class = "row">
-        <div class="col">
-          <div class="card">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="160" src="Student1.jpg" focusable="false">
-            <div class="card-body">
-              <h5 class="card-title">King Author</h5>
-              <p class="card-text">Score : 90%</p>
-              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="160" src="Student1.jpg" focusable="false">
-            <div class="card-body">
-              <h5 class="card-title">Fasen Dome</h5>
-              <p class="card-text">Score : 80%</p>
-              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-          </div>
-        </div>
-        <div class="col">
-            <div class="card">
-              <img class="bd-placeholder-img card-img-top" width="100%" height="160" src="student3.jpg" focusable="false">
-              <div class="card-body">
-                <h5 class="card-title">Prem Singh</h5>
-                <p class="card-text">Score : 70%</p>
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-              </div>
-            </div>
-          </div>
-      </div>
+    </div>
+</footer>
 
-      <br>
-      <br>
-
-
-      <div class="bd-example-snippet bd-code-snippet">
-        <div class="bd-example m-0 border-0">
-                <center> <p class="display-5">2025 Toppers</p></center>
-        </div>
-      </div>
-
-      <div class = "row">
-        <div class="col">
-          <div class="card">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="160" src="student4.jpg" focusable="false">
-            <div class="card-body">
-              <h5 class="card-title">Julia James</h5>
-              <p class="card-text">Score : 100 % </p>
-              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="160" src="Student1.jpg" focusable="false">
-            <div class="card-body">
-              <h5 class="card-title">Jully Fames</h5>
-              <p class="card-text">Score : 97%</p>
-              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-          </div>
-        </div>
-        <div class="col">
-            <div class="card">
-              <img class="bd-placeholder-img card-img-top" width="100%" height="160" src="Student1.jpg" focusable="false">
-              <div class="card-body">
-                <h5 class="card-title">Emily Book</h5>
-                <p class="card-text">Score : 95%</p>
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-              </div>
-            </div>
-          </div>
-      </div>
-
-      <div class="container">
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-          <div class="col mb-3">
-            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-              <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg> -->
-              <!-- <img src="PICT.jpg" width="50" height="50" class="d-inline-block align-top" alt="Bootstrap" > -->
-            </a>
-            <p class="text-body-secondary">&copy; PICT 2023</p>
-          </div>
-      
-          <div class="col mb-3">
-      
-          </div>
-      
-          <div class="col mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About Us</a></li>
-     
-            </ul>
-          </div>
-      
-          <div class="col mb-3">
-            <h5>Contact</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Address : Pune , Katraj</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Phone : +91 9999999999</a></li>
-   
-            </ul>
-          </div>
-          
-      
-          <div class="col mb-3">
-            <h5>Social Media</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Instagram</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Twitter</a></li>
- 
-            </ul>
-          </div>
-        </footer>
-      </div>
-    <script src="Bootstrap/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
